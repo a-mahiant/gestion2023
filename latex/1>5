@@ -1,0 +1,201 @@
+\documentclass[a4paper,12pt]{article}
+
+%%%%PAGE SETTINGS%%%%
+	\usepackage[utf8]{inputenc} 
+		\usepackage[top=2cm,bottom=3cm]{geometry} 
+		
+%%%%PREAMBLE%%%%
+	\usepackage{graphicx} 
+	\usepackage[round]{natbib} % gestion des citations
+	\usepackage[french]{babel} 
+	\usepackage{titlesec}
+	\usepackage[hyphens]{url} 
+	\usepackage[pdftex,urlcolor=black,colorlinks=true,linkcolor=black,citecolor=black]{hyperref} 
+	\usepackage{comment}
+	
+	\titleformat{\section}{}{}{0em}{\bf\LARGE}
+	\titleformat{\subsection}{}{}{0em}{\bf\Large}
+	\titleformat{\subsubsection}{}{}{0em}{\bf\normalsize}
+
+%%%%FONT%%%%
+	\usepackage{lmodern}
+	\renewcommand*\familydefault{\sfdefault}
+	\usepackage[T1]{fontenc}
+	\usepackage[bottom]{footmisc}
+	\setlength{\parskip}{1em}
+	\interfootnotelinepenalty=10000
+	
+	\bibliography{Bibliography_exam_2021_2022_Q1} 
+	\bibliographystyle{ieeetr}
+	
+	\title{titre} 
+	\author{Alice Mahiant, Guillaume Quintin, Chloé Steylaers} 
+	\date{2022,}
+
+%%%%DOCUMENT%%%%
+
+\setcounter{tocdepth}{6}
+\begin{document}
+\begin{center}
+ \includegraphics[width=0.6\textwidth]{logoulb.jpg}
+ \includegraphics[width=0.1\textwidth]{image.png}
+ \end{center}
+ \vspace*{1cm}
+ Master Sciences et Technologies de l'Information et de la Communication
+ \newline STIC-B500 - Projet : gestion et aspects méthodologiques
+   \vspace*{0,5cm}
+    \newline Enseignante: ROSSION Françoise
+ \newline 1ère session  - Janvier 2023.
+  \vspace*{0,5cm}
+ \newline \rule{11cm}{0,02cm}
+ \vspace*{1,5cm}
+ \newline \textbf{{\Large Ecriture du cahier des charges pour la révision du site internet des archives de l'Etat qui permet d'y faire des recherches (https://search.arch.be/fr/)}}
+   \vspace*{0,5cm}
+ \newline\textbf{{\large Travail de groupe.}}
+ \vspace*{1cm}
+ \newline MAHIANT Alice
+ \newline QUINTIN Guillaume
+ \newline STEYLAERS Chloé
+ \vspace*{0,5cm}
+ \newline \rule{4cm}{0,02cm}
+  
+%%%%%TABLE OF CONTENTS%%%%
+\begin{footnotesize}
+\newpage
+\tableofcontents
+\newpage
+\end{footnotesize}
+
+\begin{comment}
+%%%%*MODALITES
+\begin{scriptsize}
+\section{Modalités}
+texte
+\newline
+	\begin{itemize}
+	\setlength{\itemsep}{5pt}
+		\item{texte ;}
+		\item{texte ;}
+		\item{texte.}
+	\end{itemize}
+ \vspace*{0,3cm}
+texte
+\newline texte.
+	\subsection{subsection}
+	Texte.
+	\subsection{subsection}
+	texte
+	\begin{itemize}
+	\item{texte}
+	\item{texte}
+	\item{texte}
+	\end{itemize}
+	texte.
+	\subsection{subsection}
+	\begin{itemize}
+	\item{texte}
+		\begin{itemize}
+		\item{texte}
+		\end{itemize}
+	\item{texte}
+		\begin{itemize}
+		\item{texte}
+		\item{texte}
+		\end{itemize}
+	\end{itemize}
+	\subsection{subsection}
+	Texte.
+\end{scriptsize}
+%%%%
+
+
+\newpage
+\end{comment}
+
+%%%%SECTION 1 - introduction%%%%
+
+
+\section{section 1 - introduction}
+
+Texte.
+
+%%%%SUBSECTION 1.01%%%%
+
+\subsection{subsection}
+	\subsubsection{subsubsection}
+
+Texte.
+
+	\subsubsection{subsubsection}
+
+Texte.
+
+%%%%%SUBSECTION 1.02%%%%%
+
+\subsection{subsection}
+
+Texte.
+
+%%%%%SUBSECTION 1.03%%%%%
+
+\subsection{subsection}
+
+\subsubsection{subsubsection}
+
+Texte.
+
+\subsubsection{subsubsection}
+
+Texte.
+
+%%%%SECTION 2%%%%
+
+\section{section 2}
+
+%%%%%SUBSECTION 2.01%%%%%
+
+\subsection{subsection}
+
+Texte.
+\vspace*{0,3cm}
+\begin{itemize}
+\setlength{\itemsep}{5pt}
+	\item{texte}
+	\item{texte}
+	\item{texte}
+\end{itemize}
+\vspace*{0,3cm}
+
+Texte.
+
+
+
+%%%%%SUBSECTION 2.02%%%%%
+
+\subsection{subsection}
+
+Texte.
+
+%%%%%SECTION 3%%%%%
+
+\section{section 3}
+
+%%%%%SUBSECTION 3.01%%%%%
+
+\subsection{subsection}
+
+Texte.
+
+%%%%%SUBSECTION 3.02%%%%%
+
+\subsection{subsection}
+
+Texte.
+		
+%%%%SECTION 4%%%%
+		
+\section{section 4 - conclusion}
+
+Texte.
+
+\end{document}
