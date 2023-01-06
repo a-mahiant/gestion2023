@@ -1,5 +1,9 @@
 \documentclass[a4paper,12pt]{article}
 
+%% NOTE POUR ALICE %%
+% j'ai mis en commentaire l'appel au package hyperref + l'inclusion des 2 images (pour page de garde)
+% pour pouvoir générer un pdf de travail: à réactiver lors de la mise en commun ^^
+
 %%%%PAGE SETTINGS%%%%
 	\usepackage[utf8]{inputenc} 
 	\usepackage[top=2cm,bottom=3cm]{geometry} 
@@ -10,7 +14,7 @@
 	\usepackage[french]{babel} 
 	\usepackage{titlesec}
 	\usepackage[hyphens]{url} 
-	\usepackage[pdftex,urlcolor=black,colorlinks=true,linkcolor=black,citecolor=black]{hyperref} 
+	% \usepackage[pdftex,urlcolor=black,colorlinks=true,linkcolor=black,citecolor=black]{hyperref} 
 	\usepackage{comment}
 	
 	\titleformat{\section}{}{}{0em}{\bf\LARGE}
@@ -37,8 +41,8 @@
 \setcounter{tocdepth}{6}
 \begin{document}
 \begin{center}
- \includegraphics[width=0.6\textwidth]{logoulb.jpg}
- \includegraphics[width=0.1\textwidth]{image.png}
+% \includegraphics[width=0.6\textwidth]{logoulb.jpg}
+% \includegraphics[width=0.1\textwidth]{image.png}
  \end{center}
  \vspace*{1cm}
  Master Sciences et Technologies de l'Information et de la Communication
@@ -115,27 +119,39 @@ texte
 %%%%SECTION 1 - introduction%%%%
 
 
-\section{Introduction} % j'ai enlevé "section 1" car le 1 est ajouté automatiquement je pense?
+\section{Section 1 - Introduction}
 
 
 
-\section{Description du projet}
+\section{Section 2 - Description du projet}
+
+
 
 \subsection{Périmètre}
 
+
+
 \subsection{Typologie des utilisateurs cibles}
+
+
 
 \subsection{Objectifs SMART}
 
-\section{Analyse SWOT}
+
+
+\section{Section 3 - Analyse SWOT}
 
 
 
-\section{Planning général : WBS et diagramme de GANTT}
+\section{Section 4 - Gouvernance}
 
 
 
-\section{Gestion des risques}
+\section{Section 5 - Planning général : WBS et diagramme de GANTT}
+
+
+
+\section{Section 5 - Gestion des risques}
 
 
 
