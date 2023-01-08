@@ -1,8 +1,8 @@
 \documentclass[a4paper,12pt]{article}
 
 %% NOTE POUR ALICE %%
-% j'ai mis en commentaire l'appel au package hyperref + l'inclusion des 2 images (pour page de garde)
-% pour pouvoir générer un pdf de travail: à réactiver lors de la mise en commun ^^
+% j'ai simplifié l'appel au package hyperref + l'inclusion des 2 images (pour page de garde)
+% pour pouvoir générer un pdf de travail: à remettre lors de la mise en commun ^^
 
 %%%%PAGE SETTINGS%%%%
 	\usepackage[utf8]{inputenc} 
@@ -14,7 +14,10 @@
 	\usepackage[french]{babel} 
 	\usepackage{titlesec}
 	\usepackage[hyphens]{url} 
-	% \usepackage[pdftex,urlcolor=black,colorlinks=true,linkcolor=black,citecolor=black]{hyperref} 
+	
+	%ce package a été simplifié!!
+	\usepackage{hyperref} 
+	
 	\usepackage{comment}
 	
 	\titleformat{\section}{}{}{0em}{\bf\LARGE}
@@ -116,43 +119,118 @@ texte
 \newpage
 \end{comment}
 
-%%%%SECTION 1 - introduction%%%%
-
-
 \section{Section 1 - Introduction}
 
+Dans le cadre de ce travail, nous considérons une éventuelle refonte du site internet \href{https://search.arch.be/fr/}{La recherche aux Archives de l'État}. Comme son nom l'indique, il permet d'effectuer en ligne des recherches au sein des collections gardées par les Archives de l'État (que nous abrégerons ci-après \frquote{AE}). Notre tâche, plus modeste, s'imbrique dans ce projet de grande envergure : nous devons mener une récolte et une analyse des besoins qu'éprouvent les utilisateurs vis-à-vis de ce site de recherche.
 
+Puisque notre tâche ne peut se penser sans l'ancrer dans le projet de refonte, notre travail s'est construit sur base d'une réflexion itérative, alternant entre une vision à large échelle de la refonte dans sa globalité et un travail de précision pour l'analyse des besoins à proprement parler. Ainsi, nous commençons ce travail par une description du projet de refonte à une échelle macroscopique. Ensuite, nous concevons une récolte et une analyse des besoins dans le détail, ce qui inclut une analyse SWOT, une matrice de gouvernance RACI, un planning général (WBS et GANTT), une gestion des risques et une priorisation des besoins fonctionnels identifiés selon une matrice MoSCoW. Nous continuons avec un accompagnement du changement, un plan de communication et des recommandations pour des méthodes de gestion de projet, pour lesquels nous considérons à nouveau le projet de refonte du site. Enfin, nous achevons ce travail par un retour réflexif sur notre propre expérience tout au long de ce quadrimestre.
 
 \section{Section 2 - Description du projet}
 
+Le périmètre du projet est la révision du site internet \frquote{\href{https://search.arch.be/fr/}{La recherche aux Archives de l'État}}, dans le but qu'il réponde davantage aux besoins de ses utilisateurs. Plus précisément, nous devons nous préparer la réalisation d'un cahier des charges pour une telle révision. Pour ce faire, nous devons réaliser une analyse métier et une analyse fonctionnelle du projet de révision (\textit{scope in}). À l'inverse, l'analyse technique - bien que pertinente - se situe en dehors du périmètre de notre projet (\textit{scope out}) : en effet, nous ne disposons pas des compétences ou des accès nécessaires pour la mener à bien.
 
+Afin de mieux cerner les utilisateurs du site internet, qui sont au centre de notre travail, nous les avons classés en quatre catégories : 
+\begin{itemize}
+	\item Les notaires et les géomètres;
+	\item Les académiques : étudiants, chercheurs, enseignants ;
+	\item Les fonctionnaires ;
+	\item Les généalogistes.
+\end{itemize}
+Cette classification, qui épouse peu ou prou celle qui existe déjà que le site internet, permet d'identifier les besoins spécifiques à l'une ou l'autre groupe d'utilisateurs, même si certains besoins sont communs à plusieurs catégories.
 
-\subsection{Périmètre}
+\subsection{Résultats de l'analyse Mareva en quelques mots}
 
+Pour aborder la description du projet de refonte du site internet, nous avons décidé d'en réaliser une analyse Mareva. Même si une telle analyse exige des données dont nous ne disposons pas (comme un budget) et que par conséquent elle s'est révélée incomplète, il nous a semblé pertinent de la résumer pour en extraire les éléments intéressants.
 
+Avant toute analyse Mareva, il est nécessaire de récolter tout un ensemble d'informations. Le périmètre du projet a été établi ci-dessus, tandis que la durée ou le budget prévisionnels de celui-ci sont difficiles à estimer avec nos seules connaissances (limitées) en la matière. L'administration concernée par ce changement, ce sont les AE, en particulier son équipe IT. Le nombre de personnes concernées est théoriquement l'ensemble de la population belge, concrètement les personnes consultant le site internet (nombre qui pourrait augmenter avec un site plus intuitif). Les impacts positifs du projet seraient, du côté des AE, une plus grande autonomie des utilisateurs et une meilleure visibilité et, du côté des utilisateurs, un gain de temps, d'énergie et d'efficacité de leurs recherches. Toutefois, une refonte demanderait autant aux AE qu'aux utilisateurs de se réhabituer à un nouveau système et ajouterait une dépense fixe au budget des AE (maintien du site internet révisé), sans considérer le budget qui serait dédié à la refonte elle-même. Même s'il est difficile d'en évaluer quantitativement les coûts, il est aisé de décomposer ces derniers en catégories : coûts de développement, d'achats de nouveaux logiciels, de communication sur le nouveau système, de formation au nouveau système...
 
-\subsection{Typologie des utilisateurs cibles}
-
-
+L'analyse Mareva en elle-même est divisée en cinq étapes. Les résultats obtenus à chacune de ces étapes sont les suivants :
+\begin{enumerate}
+	\item Rentabilité : Même si la refonte du site internet représente un coût certain, elle permet un gain en efficacité indéniable pour les AE si l'outil de recherche est efficace et évite un recours à l'humain (qui mobilise des ressources humaines). Ainsi, il est possible de quantifier les gains en additionnant les ressources humaines qui peuvent être redéployées dans d'autres secteurs des AE avec les éventuelles ressources financières économisées (par une rationalisation du site internet lors de la refonte) ;
+	\item Maîtrise du risque : Les risques liés au projet peuvent être divisés en quatre catégories : les risques liées de déroulement, les risques juridiques, les risques techniques et les risques de déploiement. Dans son ensemble, le projet ne présente pas de risques particulièrement élevés. Voici les observations liées à chaque catégorie de risques :
+	\begin{itemize}
+		\item Déroulement : Ces risques sont faibles. En effet, les objectifs et le périmètre du projet sont clairs, le planning n'est pas serré et seules les AE sont concernées. Il est toutefois nécessaire de surveiller le budget qui, lui, n'est pas illimité ;
+		\item Juridiques : Ces risques sont également faibles. La refonte ne répond pas à un changement de réglementation. De nombreuses réglementations encadrent les archives (dont le RGPD), mais la refonte du site n'introduit aucun changement ;
+		\item Techniques : Ces risques sont difficiles à évaluer, puisque nous n'avons pas accès à la structure technique du site internet, mais nous pouvons les considérer comme modérés. En effet, bien que la refonte nécessite l'introduction de techniques et/ou de logiciels nouveaux, la complexité technique d'une telle entreprise est faible et s'appuie sur de l'expérience existante dans l'institution ou dans des institutions s\oe{}urs. Il faut toutefois garantir la pérennité des données si elles sont transférées, car une quelconque perte serait catastrophique ;
+		\item Déploiement : Ces risques sont les plus prononcés. Même si l'on peut considérer que les ressources nécessaire au changement seront à la disposition des AE, cette refonte concerne les processus actuellement en place dans l'institution et risque d'interrompre momentanément le service fourni aux utilisateurs. De plus, un accompagnement efficace au changement doit absolument être mis en place lors de la refonte, tant en interne qu'en externe. Une adhésion à la refonte par le public et par l'institution est nécessaire pour mener celle-ci à terme ;
+	\end{itemize}
+	\item Externalité : Le projet de refonte possède très clairement une externalité, puisqu'il vise à proposer aux utilisateurs un moteur de recherche plus efficace et intuitif que l'actuel. Qualitativement, l'objectif est de réduire le nombre d'interlocuteurs nécessaires pour trouver l'information recherchée (dans l'idéal, aucun), de proposer un haut niveau de personnalisation du service selon les types d'utilisateurs identifiés. Le service serait proposé autant en ligne que dans les salles de lecture des AE. La refonte participe hautement à la promotion de la société de l'information, puisqu'elle garantit le droit à l'information des citoyens et souligne les améliorations apportées par les nouvelles technologies en la matière. Elle permet également d'assurer une transparence de l'information et une cohérence sociale que prodigue l'accès facilité aux archives. Quantitativement, le service s'adresse en principe à l'ensemble de la population, concrètement seulement à une partie infime de celle-ci. Il est permis d'espérer que la refonte permettrait d'augmenter cette partie. Le gain temporel doit également être mentionné, puisque l'information serait plus intuitivement trouvable. En somme, l'externalité du projet obtient un résultat très haut et est l'un des points forts du projet de refonte ;
+	\item Internalité : L'internalité du projet est moins prononcée que son externalité, bien que tout de même modérément positive. En effet, la qualité de vie du personnel des AE augmenterait certainement, puisqu'une partie des questions liées à l'utilisation du site internet ne leur arriverait plus. Néanmoins, à l'exception de ce point, les critères de l'analyse Marena ne sont pas pertinentes dans le cadre de notre projet ;
+	\item Nécessité : La refonte du site de recherche est nécessaire. Elle permettrait d'augmenter l'efficience de l'action publique en améliorant une situation existante, mais c'est surtout une lourde obligation externe qui repose sur le projet. L'accès aux archives est un droit que garantit la législation belge et il est de la responsabilité des AE d'assurer un accès le plus aisé possible. Cet accès aux archives est également une obligation politique, liée au droit à l'information et à la promotion de la société de l'information précédemment mentionnée.
+\end{enumerate}
 
 \subsection{Objectifs SMART}
 
+Nous avons conçu quelques objectifs SMART permettant de suivre et de quantifier, tels des indicateurs de performance de notre projet, l'évolution et le succès de l'amélioration du site web des AE :
 
+\begin{itemize}
+	\item Le cahier des charges de la révision du site web et de son moteur de recherche doit être livré endéans un an ;
+	\item L’objectif est d’avoir un échantillon représentatif des utilisateurs actuels et potentiels du site web (administration, historiens, généalogistes, etc.) nécessaire à la réalisation du cahier des charges ;
+	\item Les enquêtes de satisfaction sur la refonte du site réalisées pendant les trois mois suivants la mise à disposition des utilisateurs finaux du nouveau site sont positives à 80 \% ;
+	\item Lors de la phase de test du produit, au moins 95 \% des utilisateurs doivent être satisfaits de leurs recherches ;
+	\item L’ensemble des interviews programmées pour l’analyse des besoins doivent être effectuées durant une période de trois mois (c’est-à-dire une période lors de laquelle le site demeure inchangé) ;
+	\item Une fois que la solution est déployée, l’objectif est de récolter pendant deux mois les retours des utilisateurs interviewés au début du projet dans le but d’évaluer l'intuitivité du site.
+	
+\end{itemize}
 
 \section{Section 3 - Analyse SWOT}
 
+Avant de nous plonger dans la planification et la réalisation de l'analyse des besoins, il fut pertinent de considérer les facteurs positifs et négatifs, qu'ils soient internes ou externes, qui influençerait celle-ci. En d'autres termes, d'effectuer une analyse SWOT de notre projet.
 
+Les facteurs positifs internes (\textit{Strengths}) : 
+\begin{itemize}
+	\item Les backgrounds des chef.fe.s du projet sont différents et complémentaires, avec un pied dans le monde de l'histoire ;
+	\item Chacun des trois chef.fe.s du projet ont suivi une formation en archivistique ;
+	\item Les contacts avec certains types d'utilisateurs (les académiques) sont facilités ;
+	\item Des réunions en présentiel sont aisément réalisables ;
+	\item Les chef.fe.s du projet communiquent bien entre eux et ont l'habitude de travailler ensemble.
+\end{itemize}
+
+Les facteurs négatifs internes (\textit{Weaknesses}) : 
+\begin{itemize}
+	\item D'autres types d'utilisateurs (généalogistes, administration) sont plus difficilement accessibles ;
+	\item Les chef.fe.s du projet n'ont que très peu d'expérience dans la gestion de projet ;
+	\item Au vu de ce manque d'expérience, l'interprétation de certaines consignes pourrait être erronée.
+\end{itemize}
+
+Les facteurs positifs externes (\textit{Opportunities}) : 
+\begin{itemize}
+	\item Les utilisateurs finaux sont motivés et enthousiastes ;
+	\item Il existe une volonté de refonte du site aux AE, et par conséquent une ouverture au dialogue ;
+	\item Le projet et sa nécessité sont légitimes et légitimées tant par les utilisateurs que l'institution.
+\end{itemize}
+
+Les facteurs négatifs externes (\textit{Threats}) : 
+\begin{itemize}
+	\item Nécessité de discrétion (il n'est pas possible de contacter directement les AE) ;
+	\item Certains utilisateurs pourraient ne pas être totalement honnêtes ou complets dans leurs interviews pour ne pas vexer les AE ;
+	\item Les utilisateurs pourraient ne pas avoir le temps de nous recevoir ;
+	\item Les utilisateurs pourraient ne pas nous répondre.
+\end{itemize}
 
 \section{Section 4 - Gouvernance}
 
+Pour établir la gouvernance de notre projet, nous avons utilisé une matrice RACI. Cette dernière, reproduite ci-après, prend la forme d'un tableau à double entrée. Les lignes correspondent aux tâches qui composent le projet (et qui font écho à celles qui se trouvent dans le WBS), tandis que les colonnes correspondent aux acteurs du projet.
 
+En l'occurrence, le projet en compte quatre : la direction (l'enseignante), les chef.fe.s de projet (le groupe étudiant), l'équipe projet (le groupe étudiant) et les utilisateurs (les personnes interviewées). Nous avons choisi de considérer que le groupe étudiant occupait tantôt le rôle de chef.fe.s de projet, tantôt celui de membre de l'équipe projet. En effet, nous nous chargions autant de la gestion de notre projet que de sa réalisation et pour produire une matrice RACI pertinente, il était nécessaire de bien distinguer les deux rôles même si ces derniers étaient tenus par les mêmes personnes.
 
-\section{Section 5 - Planning général : WBS et diagramme de GANTT}
+% insérer matrice RACI
 
+\section{Section 5 - Planning général}
 
+\subsection{WBS}
 
-\section{Section 5 - Gestion des risques}
+Pour planifier la récolte des besoins, nous l'avons divisée selon le principe du Work Breakdown Structure (WBS). Nous avons identifié sept phases séquentielles, chacune divisée en tâches plus précises. Ce WBS est détaillée dans le tableau suivant :
+% insérer tableau WBS
 
+\subsection{Diagramme de GANTT}
 
+Nous avons ensuite placé les phases et tâches identifiées dans le WBS sur un diagramme de GANTT. Même si la structure de notre projet est principalement séquentielle, le diagramme de GANTT permet de mettre en évidence les quelques tâches qui peuvent s'effectuer en parallèle (en particulier les interviews).
+% insérer le diagramme
+
+\section{Section 6 - Gestion des risques}
+
+Nous avons identifié les risques, en grande majorité de nature humaine, qui menacent notre projet de récolte des besoins et les avons classés selon leur niveau de gravité. Ils sont repris dans le tableau suivant, accompagnés d'un plan d'action (actions préventives et correctrices) :
+% insérer le tableau risques
 
 \end{document}
